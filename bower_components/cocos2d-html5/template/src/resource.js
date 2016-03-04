@@ -1,15 +1,11 @@
-var s_HelloWorld = "HelloWorld.jpg";
-var s_CloseNormal = "CloseNormal.png";
-var s_CloseSelected = "CloseSelected.png";
+var img_main = 'main.png';
+var plist_main = 'main.plist';
 
 var g_resources = [
     //image
-    s_HelloWorld,
-    s_CloseNormal,
-    s_CloseSelected
-
+    img_main,
     //plist
-
+    plist_main
     //fnt
 
     //tmx

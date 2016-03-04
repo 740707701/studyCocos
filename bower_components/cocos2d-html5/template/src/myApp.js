@@ -38,6 +38,20 @@ var MyLayer = cc.Layer.extend({
         // add the label as a child to this layer
         this.addChild(this.helloLabel, 5);
 
+        /*
+        后增加的函数
+        var self = this;
+        closeItem.runAction(cc.sequence(
+        cc.moveBy(1,{x:0,y:200}),
+        cc.callFunc(function(){
+            // console.log('end');
+            self.helloLabel.runAction(cc.sequence(
+                cc.rotateBy(2,360)
+            ).repeatForever());
+            console.log(this)
+        })
+        ));
+        */
         // add "Helloworld" splash screen"
         this.sprite = new cc.Sprite(s_HelloWorld);
         this.sprite.setAnchorPoint(0.5, 0.5);
